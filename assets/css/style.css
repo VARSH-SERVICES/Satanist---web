@@ -1,70 +1,4 @@
-/*********************************************************************************
 
-	Template Name: Imroz - Html5 Agency & Portfolio Template
-	Note: This is style css.
-
-**********************************************************************************/
-/**************************************************************
-	
-	STYLESHEET INDEXING
-	|
-	|
-	|___ Default Styles
-	|	|
-	|	|___ variables
-	|	|___ mixins
-	|	|___ reset
-	|	|___ typography
-	|	|___ extend
-	|	|___ animations
-	|	|___ shortcode
-	|	|___ spacing
-	|
-	|
-	|___Header Styles
-	|	|___ header
-	|	|___ mainmenu
-	|
-	|
-	|___Inner Styles
-	|	|___ breadcrump 
-	|	|___ section-title 
-	|	|___ button
-	|	|___ pagination
-	|	|___ socialicon
-	|	|___ footer
-	|
-	|___Elements Styles
-	|	|___ portfolio 
-	|	|___ service 
-	|	|___ slider 
-	|	|___ counterup 
-	|	|___ testimonial 
-	|	|___ brand 
-	|	|___ team 
-	|	|___ callto-action 
-	|	|___ tab 
-	|	|___ accordion 
-	|	|___ list 
-	|	|___ contact 
-	|
-	|___BLog Styles
-	|	|___ blog 
-	|	|___ blog-details 
-	|
-	|___Template Styles
-	|	|___ about 
-	|	|___ portfolio-details
-	|	|___ service-details
-	|	|___ preview
-	|
-	|
-	|___ END STYLESHEET INDEXING
-
-***************************************************************/
-/**************************************
-    Default Styles
-***************************************/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900|Poppins:300,400,500,600,700,700i&display=swap");
 :root {
   --color-primary: #FD4766;
@@ -137,22 +71,14 @@
   --h4: 24px;
   --h5: 18px;
   --h6: 16px; }
-
-/*===============================
-    Font Family 
-=================================*/
-/*===============================
-    Color Variation 
-=================================*/
-/* container 450px*/
-/* container 300px*/
-/**
- * Reset Styels
- */
+.dark {
+  color: var(--color-dark)
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none!important; }
 
 article,
 aside,
@@ -165,158 +91,24 @@ nav,
 section,
 summary {
   display: block; }
-
-audio,
-canvas,
-video {
-  display: inline-block; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden] {
-  display: none; }
-
 html,
 button,
 input,
 select,
 textarea {
   font-family: "Source Sans Pro", Helvetica, sans-serif; }
-
 a {
   color: #ca3c08;
   text-decoration: none; }
-
 a:visited {
   color: #ac0404; }
-
-a:focus {
-  outline: thin dotted; }
-
-a:active,
-a:hover {
-  color: #ea9629;
-  outline: 0; }
-
-a:hover {
-  text-decoration: underline; }
-
-address {
-  font-style: italic;
-  margin: 0 0 24px; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b,
-strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-mark {
-  background: #ff0;
-  color: #010001; }
-
 p {
   margin: 0 0 24px; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 14px;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none; }
-
-pre {
-  background: #f5f5f5;
-  color: #666;
-  font-family: monospace;
-  font-size: 14px;
-  margin: 20px 0;
-  overflow: auto;
-  padding: 20px;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-blockquote,
-q {
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  quotes: none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none; }
-
-blockquote {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 300;
-  margin: 24px 40px; }
-
-blockquote blockquote {
-  margin-right: 0; }
-
-blockquote cite,
-blockquote small {
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase; }
-
-blockquote em,
-blockquote i {
-  font-style: normal;
-  font-weight: 300; }
-
-blockquote strong,
-blockquote b {
-  font-weight: 400; }
-
-small {
-  font-size: smaller; }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-dl {
-  margin: 0 20px; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 0 20px; }
-
 menu,
 ol,
 ul {
   margin: 16px 0;
   padding: 0 0 0 40px; }
-
 ul {
   list-style-type: square; }
 
@@ -336,24 +128,6 @@ img {
 
 svg:not(:root) {
   overflow: hidden; }
-
-figure {
-  margin: 0; }
-
-form {
-  margin: 0; }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  min-width: inherit;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal; }
-
 button,
 input,
 select,
@@ -362,11 +136,9 @@ textarea {
   margin: 0;
   max-width: 100%;
   vertical-align: baseline; }
-
 button,
 input {
   line-height: normal; }
-
 button,
 html input[type="button"],
 input[type="reset"],
@@ -375,90 +147,14 @@ input[type="submit"] {
   -moz-appearance: button;
   appearance: button;
   cursor: pointer; }
-
-button[disabled],
-input[disabled] {
-  cursor: default; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  padding: 0; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-  appearance: textfield;
-  padding-right: 2px;
-  width: 270px; }
-
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-  appearance: none; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto;
-  vertical-align: top; }
-
-table {
-  border-bottom: 1px solid #ededed;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font-size: 14px;
-  line-height: 2;
-  margin: 0 0 20px;
-  width: 100%; }
-
-caption,
-th,
-td {
-  font-weight: normal;
-  text-align: left; }
-
-caption {
-  font-size: 16px;
-  margin: 20px 0; }
-
-th {
-  font-weight: bold;
-  text-transform: uppercase; }
-
-td {
-  border-top: 1px solid #ededed;
-  padding: 6px 10px 6px 0; }
-
-del {
-  color: #333; }
-
-ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-hr {
-  background-size: 4px 4px;
-  border: 0;
-  height: 1px;
-  margin: 0 0 24px; }
-
-/**
- * Typography
- */
 * {
   box-sizing: border-box; }
-
 img {
   max-width: 100%; }
-
 html {
   overflow: hidden;
   overflow-y: auto;
   scroll-behavior: smooth; }
-
 body {
   overflow: hidden;
   font-size: var(--font-size-b1);
@@ -468,10 +164,8 @@ body {
   font-family: var(--font-primary);
   color: var(--color-white);
   font-weight: 400; }
-
 a {
   transition: all 0.4s ease-in-out 0s; }
-
 h1,
 h2,
 h3,
@@ -498,7 +192,6 @@ caption,
 hr {
   margin: 0;
   margin-bottom: 15px; }
-
 h1,
 h2,
 h3,
@@ -514,23 +207,18 @@ h6,
   font-family: "Poppins", sans-serif;
   line-height: 1.4074;
   color: #fff; }
-
 h1,
 .h1 {
   font-size: var(--h1); }
-
 h2,
 .h2 {
   font-size: var(--h2); }
-
 h3,
 .h3 {
   font-size: var(--h3); }
-
 h4,
 .h4 {
   font-size: var(--h4); }
-
 h5,
 .h5 {
   font-size: var(--h5); }
@@ -538,7 +226,6 @@ h5,
 h6,
 .h6 {
   font-size: var(--h6); }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   h1,
   .h1 {
@@ -549,7 +236,6 @@ h6,
   h3,
   .h3 {
     font-size: var(--h3)-2; } }
-
 @media only screen and (max-width: 767px) {
   h1,
   .h1 {
@@ -560,12 +246,10 @@ h6,
   h3,
   .h3 {
     font-size: var(--h3)-2; } }
-
 @media only screen and (max-width: 575px) {
   h1,
   .h1 {
     font-size: var(--h1)-8; } }
-
 h1,
 .h1,
 h2,
@@ -583,7 +267,6 @@ h5,
 h6,
 .h6 {
   font-weight: 500; }
-
 p {
   font-size: var(--font-size-b1);
   line-height: var(--line-height-b1);
@@ -595,16 +278,8 @@ p {
   @media only screen and (max-width: 767px) {
     p br {
       display: none; } }
-
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  outline: none; }
-
 a:visited {
   color: inherit; }
-
 input,
 button,
 select,
@@ -613,121 +288,37 @@ textarea {
   border: 1px solid #d4d4d4;
   transition: all 0.4s ease-out 0s;
   color: #1d1d24; }
-  input:focus, input:active,
-  button:focus,
-  button:active,
-  select:focus,
-  select:active,
-  textarea:focus,
-  textarea:active {
-    outline: none;
-    border-color: var(--color-primary); }
-
-input,
-select,
-textarea {
-  width: 100%;
-  font-size: 14px; }
-
-input,
-select {
-  height: 40px;
-  padding: 0 15px; }
-
-/*=====================
-Common Css 
-=======================*/
-.textBlack {
-  color: #010001; }
-
-.bodyColor {
-  color: #535353; }
-
-.color-1 {
-  color: #8956e2; }
-
-.color-2 {
-  color: #11ccd3; }
-
-.color-3 {
-  color: #f4769a; }
-
-.color-4 {
-  color: #2f21b3; }
-
-.bgcolor-4 {
-  background: #2f21b3; }
-
 .mainmenunav ul.mainmenu, .mainmenunav ul.mainmenu > li > ul.submenu, .color-white .mainmenunav ul.mainmenu, .color-black .mainmenunav ul.mainmenu, .rn-popup-mobile-menu ul.mainmenu, .rn-popup-mobile-menu ul.mainmenu li ul, .breadcrumb-inner ul.page-list, .rn-pagination ul.page-list, ul.brand-list, ul.tab-style--1, .list-style--1, ul.list-style, .blog-single-page-title ul.blog-meta, .pv-tab-button {
   padding: 0;
   margin: 0;
   list-style: none; }
-
 .liststyle {
   padding: 0;
   margin: 0;
   list-style: none; }
-
 .im-hover::after, .footer-style-01 .footer-link ul.ft-link li a::after, .footer-style-01 .ft-text p a::after, .header-area .header-wrapper a.rn-btn, .mainmenunav ul.mainmenu > li > a, .mainmenunav ul.mainmenu > li > ul.submenu, .mainmenunav ul.mainmenu > li > ul.submenu li a, a.btn-transparent, a.btn-transparent::after, a.rn-btn,
 button.rn-btn, ul.social-share li a, .portfolio, .portfolio .thumbnail-inner::before, .portfolio .thumbnail::after, .portfolio .bg-blr-image, .portfolio .content .inner .portfolio-button, .portfolio-sacousel-inner .slick-dots li button::after,
 .rn-slick-dot .slick-dots li button::after, .portfolio-style--3, .portfolio-style--3 .thumbnail a img, .portfolio-style--3 .thumbnail a::after, .portfolio-style--3 .content, .portfolio-style--3 .content::before, .portfolio-style--3 .content h4.title a, .portfolio-style--3 .content .portfolio-btn, .item-portfolio-static .thumbnail a img, .item-portfolio-static .thumbnail img, .service-main-wrapper .service.service__style--1, .service-main-wrapper .service.service__style--2 .icon, .service-main-wrapper .service.service__style--2 .content h3.title, .service-main-wrapper .service.service__style--2 .content p, .standard-service .content h3 a, ul.testimonial-thumb-wrapper li .thumb img, ul.testimonial-thumb-wrapper li .thumb::after, ul.brand-list li, ul.brand-list li img, .team .thumbnail img, .rn-address .inner p a, input,
 textarea, .rn-pricing .pricing-table-inner .pricing-footer a.rn-btn, .blog-style--1, .blog-style--1 .thumbnail a img, .blog-style--1 .thumbnail a::after, .blog-style--1 .content, .blog-style--1 .content::before, .blog-style--1 .content h4.title a, .blog-style--1 .content .blog-btn, .im_box .content .title a, .footer-style-01 .footer-link ul.ft-link li a, .related-work .inner h4 a {
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
-
-.rn-progress-bar .single-progress .title, .rn-progress-bar .single-progress .label, .about-us-list h3.title {
-  font-weight: 500; }
-
-.section-title-default h2.title {
-  font-weight: 400; }
-
-.fontWeight900 {
-  font-weight: 900 !important; }
-
-.fontWeight800 {
-  font-weight: 800 !important; }
-
-.fontWeight700 {
-  font-weight: 700 !important; }
-
-.fontWeight600 {
-  font-weight: 600 !important; }
-
-.fontWeight500 {
-  font-weight: 500 !important; }
-
-.fontWeight400 {
-  font-weight: 400 !important; }
-
-.fontWeight300 {
-  font-weight: 300 !important; }
-
 .service-main-wrapper .service.service__style--1, .service-main-wrapper .service.service__style--2 {
   position: relative; }
-
-.textUpper {
-  text-transform: uppercase; }
-
-.textCap {
-  text-transform: capitalize; }
-
 p:last-child {
   margin-bottom: 0; }
-
 .bg_image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-
-.text-default-gradient {
-  background: linear-gradient(to right, var(--color-primary) 50%, var(--color-secondary) 50%);
+.gradient {
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primary) 79.69%);
+  color: transparent!important;
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
+}
 .bg-theme-gradient, .im-hover::after, .footer-style-01 .footer-link ul.ft-link li a::after, .footer-style-01 .ft-text p a::after, a.btn-transparent::after {
   background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primary) 79.69%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--color-primary)', endColorstr='var(--color-secondary)',GradientType=1 ); }
-
 .theme-gradient, a.btn-transparent, .section-title span.subtitle {
   background: var(--color-primary);
   background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primary) 79.69%);
@@ -735,7 +326,6 @@ p:last-child {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block; }
-
 .im-hover, .footer-style-01 .footer-link ul.ft-link li a, .footer-style-01 .ft-text p a {
   position: relative; }
   .im-hover::after, .footer-style-01 .footer-link ul.ft-link li a::after, .footer-style-01 .ft-text p a::after {
@@ -745,22 +335,6 @@ p:last-child {
     bottom: 0;
     width: 0;
     height: 1px; }
-  .im-hover:hover::after, .footer-style-01 .footer-link ul.ft-link li a:hover::after, .footer-style-01 .ft-text p a:hover::after {
-    width: 100%; }
-
-.theme-color {
-  color: var(--color-primary) !important; }
-
-.font-700 {
-  font-weight: 700 !important; }
-
-/*!
-Animate.css - http://daneden.me/animate
-Version - 3.4.0
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -3177,7 +2751,7 @@ font-family: 'Poppins', sans-serif;
     Background Color 
 =================================*/
 .bg_color--1 {
-  background: #0f1116; }
+  background: #0c0e12!important; }
 
 .bg_color--2 {
   background: var(--color-primary); }
@@ -10320,8 +9894,6 @@ Slick Animation For Slider
         font-size: 44px;
         font-weight: 600;
         line-height: 52px; } }
-    .im_counterup .inner .counter::after {
-      content: ""; }
   .im_counterup .inner .description {
     font-size: 18px;
     line-height: 28px; }
@@ -10928,7 +10500,7 @@ ul.tab-style--1 {
   padding-top: 20px; }
   .single-tab-content p {
     font-weight: 300;
-    color: #717173;
+    color: #fff;
     font-size: 18px;
     line-height: 30px; }
 
