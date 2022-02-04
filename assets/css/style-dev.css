@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+.h1-styled{
+    color: black;margin-top: 19%;-webkit-text-stroke: 1px white;
+}
+.awaiting {
+    color: orange;
+    text-shadow: 0 0 8px orange;
+}
+.working {
+    color: green;
+    text-shadow: 0 0 8px green;
+}
